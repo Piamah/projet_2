@@ -76,9 +76,29 @@ nav {
 /* Penser à bien modifier les écarts : ils sont faux ici. 
 Penser à ajouter la ligne bleue au dessus de "hébergements" et "activité" */
   }
+
   a:hover {
-  color: #0065FC;
+    color: #0065FC;
+    
   }
+  
+  ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+
+  }
+  
+  li {
+    display: flex;
+    margin-right: 50px;
+    padding-top: 17px;
+  }
+  
+  li:hover {
+    border-top: 2px solid #0065FC;
+  }
+  
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
