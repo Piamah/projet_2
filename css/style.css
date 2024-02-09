@@ -58,47 +58,78 @@ a {
     color: var(--main-bg-color)
 }
 
-.top-logo {
-    width: Hug (121.09px);
-    height: Hug (79px);
-    top: 108px;
-    left: 48px;
-    padding: 30px;
-    gap: 10px;
- 
-}
 
 nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+    top: 0px;
+    right : 0px;
 /* Penser à bien modifier les écarts : ils sont faux ici. 
-Penser à ajouter la ligne bleue au dessus de "hébergements" et "activité" */
-  }
+Penser à ajouter la ligne bleue au dessus de "hébergements" et "activité"
+Mettre logo dans coin gauche+réduit */
+}
 
-  a:hover {
+a:hover {
     color: #0065FC;
     
-  }
+}
   
-  ul {
+ul {
     display: flex;
     margin: 0px;
     padding: 0px;
 
-  }
+}
   
-  li {
+li {
     display: flex;
     margin-right: 50px;
     padding-top: 17px;
-  }
+}
   
-  li:hover {
+li:hover {
     border-top: 2px solid #0065FC;
-  }
-  
+}
+
+.top-logo {
+    width: 61.09px;
+    height: 19px;
+    padding: 30px 50px 30px 50px;
+    gap: 10px;
+}
+
+/* Trouvez un hébergement pour des vacances de rêve
+Essayer de voir si je peux fixer ça, trop sur la droite */
+
+.trouvez-hebergement{
+    width: fill 1340px;
+    width: fixed 53px;
+    gap: 8px;
+}
+
+.trouvez-title {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25,83px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+.trouvez-txt {
+font-family: Raleway;
+font-size: 16px;
+font-weight: 400;
+line-height: 18,78px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -115,6 +146,8 @@ Penser à ajouter la ligne bleue au dessus de "hébergements" et "activité" */
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    padding: 30px;
+    gap: 30px;
 }
 
 /****** Populaires ***********/
