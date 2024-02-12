@@ -105,12 +105,20 @@ li:hover {
 /* Trouvez un hébergement pour des vacances de rêve
 Essayer de voir si je peux fixer ça, trop sur la gauche */
 
+.under-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 
+}
+    
 
 .trouvez-hebergement{
     width: fill 1340px;
     width: fixed 53px;
     gap: 8px;
+
 }
 
 .trouvez-title {
@@ -124,12 +132,12 @@ Essayer de voir si je peux fixer ça, trop sur la gauche */
 }
 
 .trouvez-txt {
-font-family: Raleway;
-font-size: 16px;
-font-weight: 400;
-line-height: 18,78px;
-letter-spacing: 0em;
-text-align: left;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18,78px;
+    letter-spacing: 0em;
+    text-align: left;
 
 }
 
@@ -203,9 +211,6 @@ du bouton. */
 }
 
 .filter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: Raleway;
     font-size: 18px;
     font-weight: 700;
@@ -214,6 +219,8 @@ du bouton. */
     text-align: center;
 
 }
+
+
 
 .price {
     font-family: Raleway;
@@ -287,6 +294,35 @@ du bouton. */
 .filters-section form :hover{
 background-color: #DEEBFF;
 }
+
+/* 500 logements */
+
+/* .info-icon-circle {
+display: flex;
+justify-content: flex-start;
+width: 24px;
+height: 24px;
+border: 1px solid #D9D9D9;
+border-radius: 50%;
+
+}
+
+.info-icon {
+display: flex;
+justify-content: flex-start;
+}
+
+.info-lgmt {
+font-family: Raleway;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+} */
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
