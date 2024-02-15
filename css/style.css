@@ -317,7 +317,7 @@ du bouton. */
     gap: 30px;
 }
 
-.hebergements-title {
+.hebergements-main-title {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -333,9 +333,19 @@ du bouton. */
     
 }
 
+.hebergements-line-1,
+.hebergements-line-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
 .hebergements-cards .card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
     margin-top: 33px;
     width: 250px;
     height: 207px;
@@ -355,38 +365,37 @@ du bouton. */
 }
 
 .hebergements-cards .card-content {
-    width: 67%;
+    max-width: 67%;
     padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-    
 }
 
 .hebergements .card-txt {
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
-    justify-content: space-between;
     box-sizing: border-box;
+    gap: 10px;
+    padding: 0px 0px 5px 0px;
 }
 
 .hebergements-cards .card-title {
     width: 220px;
     height: 19px;
+    margin: 0%;
     font-family: Raleway;
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
+    gap: 10px
     
 }
 
 .hebergements-cards .card-subtitle {
     width: 220.33px;
     height: 16px;
-    margin: 0;
+    margin: 0%;
     font-family: Raleway;
     font-size: 14px;
     font-weight: 600;
@@ -406,6 +415,19 @@ du bouton. */
     margin-bottom: 5px;
 }
 
+.show-more {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
 
 /****** Populaires ***********/
 .populaires {
