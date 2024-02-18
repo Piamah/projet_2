@@ -88,8 +88,8 @@ header nav ul {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    margin: 0px;
-    padding: 0px;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
 
 }
   
@@ -474,13 +474,6 @@ header a:hover {
 
 /* SECTION ACTIVITES */
 
-.activites {
-    width: 65%;
-    height: 560px;
-    padding: 30px;
-    gap: 30px;
-}
-
 h4 {
     font-family: Raleway;
     font-size: 22px;
@@ -488,7 +481,15 @@ h4 {
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
+    margin-bottom: 0px;
     
+}
+
+.activites {
+    width: 65%;
+    height: 560px;
+    padding: 30px;
+    gap: 30px;
 }
 
 .activites-cards {
@@ -498,14 +499,11 @@ h4 {
     flex-wrap: nowrap;
     padding: 30px;
     gap: 30px;
-    width: 297.5px;
-    height: 439px;
-    border-radius: 20px;
-
+    margin-left: -30px;
 } 
 
 .activites .card {
-    padding: 0px;
+    padding: 0px 0px 5px 0px;
 }
 
 .activites img {
@@ -516,6 +514,21 @@ h4 {
 
 
 }
+
+.activites span {
+    display: flex;
+    justify-content: flex-start;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 15px;
+
+}
+
+
 
 /* SECTION FOOTER */
 
@@ -542,7 +555,7 @@ footer span {
     letter-spacing: 0em;
     text-align: left;
     padding: 20px 15px 20px 15px;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 footer p {
@@ -553,9 +566,8 @@ footer p {
     letter-spacing: 0em;
     text-align: left;
     padding-left: 15px;
-    margin-left: 50px;
-    margin-right: 200px;
-    
+    margin-left: 10px;
+    margin-right: 240px;
     
 
 }
