@@ -14,11 +14,11 @@
 }
 
 .black {
-    color:black
+    color:black;
 }
 
 .blue {
-    color:#0065FC
+    color:#0065FC;
 }
 
 body {
@@ -66,7 +66,7 @@ a {
     color: var(--main-bg-color)
 }
 
-/* Header properties */
+/* SECTION HEADER */
 
 header {
     display: flex;
@@ -109,17 +109,15 @@ header a:hover {
     
 }
 
-/* Trouvez un hébergement pour des vacances de rêve
-Essayer de voir si je peux fixer ça, trop sur la gauche */
+/* SECTION MAIN */
 
-.recherche {
+/* .recherche {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
 
-}
-    
+} (DISPENSABLE)*/
 
 .trouvez-hebergement{
     width: fill 1340px;
@@ -132,23 +130,23 @@ Essayer de voir si je peux fixer ça, trop sur la gauche */
     font-family: Raleway;
     font-size: 22px;
     font-weight: 700;
-    line-height: 25,83px;
+    line-height: 25.83px;
     letter-spacing: 0em;
     text-align: left;
-    
+    margin-bottom: -10px;
 }
 
 .trouvez-txt {
     font-family: Raleway;
     font-size: 16px;
     font-weight: 400;
-    line-height: 18,78px;
+    line-height: 18.78px;
     letter-spacing: 0em;
     text-align: left;
-
+    margin-bottom: 30px;
 }
 
-/* Section de recherche */
+/* BARRE RECHERCHE */
 
 .location-icon {
     display: flex;
@@ -165,6 +163,7 @@ Essayer de voir si je peux fixer ça, trop sur la gauche */
     align-items: center;
     margin: 0;
     padding: 0;
+    margin-bottom: 35px;
     
 }
 
@@ -176,7 +175,6 @@ Essayer de voir si je peux fixer ça, trop sur la gauche */
     text-align: center;
     width: 195px;
     height: 49px;
-    gap: 10px;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     border-left: 1px solid #F2F2F2;
@@ -187,8 +185,7 @@ Essayer de voir si je peux fixer ça, trop sur la gauche */
 .recherche input::placeholder {
     color:black
 }
-/* Pour bien fit la barre de recherche avec le bouton, j'ai repris des éléments de code
-du bouton. */
+
 .recherche button {
     font-family: Raleway;
     font-size: 18px;
@@ -204,16 +201,17 @@ du bouton. */
     border: 1px;
     gap: 10px;
     background-color: #0065FC;
-    border: 1px #0065FC;
+    border: 1px solid #0065FC;
     margin-left: -5px;
 
 }
 
-/* Section Filtres */
+/* SECTION FILTRES */
 .filters-section {
     display: flex;
     flex-direction: row;
     gap: 15px;
+    margin-bottom: 20px;
 }
 
 .filter {
@@ -241,7 +239,6 @@ du bouton. */
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
-    width: 173px;
     height: 50px;
     padding: 4px 19px 4px 19px;
     border-radius: 25px;
@@ -254,19 +251,21 @@ du bouton. */
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+
 }
 
 .filters-section button:hover{
     background-color: #DEEBFF;
 }
 
-/* 500 logements */
+/* 500 LOGEMENTS */
 
 .info-lgmt {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .info-icon-circle {
@@ -296,7 +295,7 @@ du bouton. */
 }
 
 
-/****** Hebergements And Populaires ***********/
+/* SECTIONS HEBERGEMENTS ET POPULAIRES */
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -310,7 +309,7 @@ du bouton. */
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/* SECTION HEBERGEMENTS */
 .hebergements {
     width: 65%;
     padding: 30px;
@@ -348,8 +347,7 @@ du bouton. */
     justify-content:space-between;
     margin-top: 33px;
     width: 250px;
-    height: 207px;
-    padding: 0px 0px 15px 0px;
+    padding: 0px 0px 10px 0px;
     gap: 4px;
     box-shadow: 0px 3px 15px 0px #0000001A;
 
@@ -358,7 +356,7 @@ du bouton. */
 
 .hebergements-cards img {
     width: 250px;
-    height: 124px;
+    height: 110px;
     border-radius: 20px 20px 0px 0px;
     border: 5px solid white;
 
@@ -388,7 +386,6 @@ du bouton. */
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-    gap: 10px
     
 }
 
@@ -417,7 +414,6 @@ du bouton. */
 
 .show-more {
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
     font-family: Raleway;
@@ -426,10 +422,11 @@ du bouton. */
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
+    margin-top: 30px;
     
 }
 
-/****** Populaires ***********/
+/* SECTION POPULAIRES */
 .populaires {
     width: 32%;
 }
@@ -475,7 +472,93 @@ du bouton. */
 }
 
 
+/* SECTION ACTIVITES */
 
+.activites {
+    width: 65%;
+    height: 560px;
+    padding: 30px;
+    gap: 30px;
+}
+
+h4 {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+.activites-cards {
+    display: flex;
+    justify-content:flex-start;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    padding: 30px;
+    gap: 30px;
+    width: 297.5px;
+    height: 439px;
+    border-radius: 20px;
+
+} 
+
+.activites .card {
+    padding: 0px;
+}
+
+.activites img {
+    width: 297.5px;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+    border:none;
+
+
+}
+
+/* SECTION FOOTER */
+
+footer {
+    width: 1340px;
+    height: 163px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    background-color: #F2F2F2;
+}
+
+footer div {
+    margin-top: 20px;
+}
+
+
+footer span {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 20px 15px 20px 15px;
+    margin-left: 50px;
+}
+
+footer p {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 15px;
+    margin-left: 50px;
+    margin-right: 200px;
+    
+    
+
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
