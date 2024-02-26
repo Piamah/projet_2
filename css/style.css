@@ -533,11 +533,11 @@ footer {
     max-width: 100%;
     height: 163px;
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
     background-color: #F2F2F2;
-    gap:30px;
+    gap:250px;
+    padding-bottom: 20px;
 }
 
 footer div {
@@ -566,6 +566,7 @@ footer a {
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 15px;
+
 }
 
 
