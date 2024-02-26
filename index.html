@@ -39,14 +39,14 @@
                     <div class="location-icon">
                         <i class="fa-solid fa-location-dot black";></i>
                     </div>
-                    <label for="site-search"></label>
-                        <input type="search" placeholder="Marseille, France">
-                        <button>Rechercher</button>
+                    <input type="search" placeholder="Marseille, France">
+                    <button><span>Rechercher</span></button>
                 </form>
             </section>
             <!-- SECTION FILTRES -->
             <section class="filters-section">
-                <p class="filter">Filtres</p>
+                <!-- Il a été suggéré de remplacer <p> par <h2> mais propriétés différentes? -->
+                <p class="filter">Filtres</p> 
                     <button class="price"><i class="fa-solid fa-money-bill-wave blue"></i>Économique</button>
                     <button class="family"><i class="fa-solid fa-person blue"></i>Familial</button>
                     <button class="romantic"><i class="fa-solid fa-heart blue"></i>Romantique</button>
@@ -55,11 +55,9 @@
             <!-- INFO LOGEMENTS (PENSER A BOUGER AU DESSUS) -->
             <div class="info-lgmt">
                 <div class="info-icon-circle">
-                    <div class="info-icon">
                         <i class="fa-solid fa-info fa-xs blue"></i>
-                    </div>
                 </div>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <span>Plus de 500 logements sont disponibles dans cette ville</span>
             </div>
             <!-- SECTION HEBERGEMENTS ET POPULAIRES -->
             <div class="hebergements-and-populaires">
@@ -186,7 +184,6 @@
                         </a>
                     </div>
                 </div>
-                <!-- A FIXER -->
                 <a href ="#">
                     <span class="show-more" id="show-more">Afficher plus</span>
                 </a>
@@ -260,7 +257,7 @@
             </div>
             <!-- SECTION ACTIVITES -->
             <section class="activites">
-                <h4 class="activities-main-title">Activités à Marseille</h4> 
+                <h2 class="activities-main-title">Activités à Marseille</h2> 
             <div class="activites-cards">
                 <a href="#">
                     <article class="card">
@@ -308,25 +305,22 @@
         <!-- SECTION FOOTER -->
         <footer>
             <div class= "about">
-                <span>À propos</span>
-                <a href="#">
-                    <p>Fonctionnement du site</p>
-                    <p>Conditions générales</p>
-                    <p>Données et confidentialité</p>
+                <h3>À propos</h3>
+                    <a href="#">Fonctionnement du site</a>
+                    <a href="#">Conditions générales</a>
+                    <a href="#">Données et confidentialité</a>
                 </a>
             </div>
             <div class= "hosting">
-                <span>Nos hébergements</span>
-                <a href="#">
-                    <p>Charte qualité</p>
-                    <p>Proposer votre hôtel</p>
+                <h3>Nos hébergements</h3>
+                    <a href="#">Charte qualité</a>
+                    <a href="#">Proposer votre hôtel</a>
                 </a>
             </div>
             <div class= "help">
-                <span>Assistance</span>
-                <a href="#">
-                    <p>Centre d’aide</p>
-                    <p>Nous contacter</p>
+                <h3>Assistance</h3>
+                    <a href="#">Centre d’aide</a>
+                    <a href="#">Nous contacter</a>
                 </a>
             </div>
         </footer>

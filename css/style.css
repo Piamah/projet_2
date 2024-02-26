@@ -111,14 +111,6 @@ header a:hover {
 
 /* SECTION MAIN */
 
-/* .recherche {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-} (DISPENSABLE)*/
-
 .trouvez-hebergement{
     width: fill 1340px;
     width: fixed 53px;
@@ -261,6 +253,7 @@ header a:hover {
 /* 500 LOGEMENTS */
 
 .info-lgmt {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -312,15 +305,13 @@ header a:hover {
 /* SECTION HEBERGEMENTS */
 .hebergements {
     width: 65%;
-    padding: 30px;
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 30px;
+    gap: 30px; */
 }
 
-.hebergements-main-title {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
+h2 { 
     font-family: Raleway;
     font-size: 22px;
     font-weight: 700;
@@ -335,9 +326,13 @@ header a:hover {
 .hebergements-line-1,
 .hebergements-line-2 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap:20px;
     
+}
+
+
+.hebergements-cards a {
+    width: 100%;
 }
 
 .hebergements-cards .card {
@@ -346,17 +341,16 @@ header a:hover {
     flex-wrap: wrap;
     justify-content:space-between;
     margin-top: 33px;
-    width: 250px;
     padding: 0px 0px 10px 0px;
     gap: 4px;
     box-shadow: 0px 3px 15px 0px #0000001A;
 
-
 }
 
 .hebergements-cards img {
-    width: 250px;
+    width: 100%;
     height: 110px;
+    object-fit:cover;
     border-radius: 20px 20px 0px 0px;
     border: 5px solid white;
 
@@ -376,7 +370,7 @@ header a:hover {
     padding: 0px 0px 5px 0px;
 }
 
-.hebergements-cards .card-title {
+.hebergements h3 {
     width: 220px;
     height: 19px;
     margin: 0%;
@@ -390,8 +384,6 @@ header a:hover {
 }
 
 .hebergements-cards .card-subtitle {
-    width: 220.33px;
-    height: 16px;
     margin: 0%;
     font-family: Raleway;
     font-size: 14px;
@@ -482,31 +474,36 @@ h4 {
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 0px;
-    
 }
 
 .activites {
-    width: 65%;
+    max-width: 100%;
+    width: 1340px;
     height: 560px;
-    padding: 30px;
+    padding: 50px;
     gap: 30px;
 }
 
 .activites-cards {
     display: flex;
-    justify-content:flex-start;
+    justify-content:space-between;
     flex-direction:row;
     flex-wrap: nowrap;
-    padding: 30px;
-    gap: 30px;
-    margin-left: -30px;
+    max-width: 100%;
+    width:1280px;
+    padding: 30px 0px 30px 0px;
+    gap: 5px;
 } 
 
 .activites .card {
+    max-width: 100%;
+    width: 297.5px;
     padding: 0px 0px 5px 0px;
+
 }
 
 .activites img {
+    max-width: 100%;
     width: 297.5px;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
@@ -533,44 +530,44 @@ h4 {
 /* SECTION FOOTER */
 
 footer {
-    width: 1340px;
+    max-width: 100%;
     height: 163px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
     background-color: #F2F2F2;
+    gap:30px;
 }
 
 footer div {
-    margin-top: 20px;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
 }
 
 
-footer span {
+footer h3 {
     font-family: Raleway;
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
-    padding: 20px 15px 20px 15px;
-    margin-left: 10px;
+    margin-bottom: 15px;
 }
 
-footer p {
+footer a {
+    display: flex;
+    flex-direction: column;
     font-family: Raleway;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 15px;
-    margin-left: 10px;
-    margin-right: 240px;
-    
-
+    margin-bottom: 15px;
 }
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -583,6 +580,7 @@ footer p {
 
     .hebergements {
         width: 100%;
+        margin-top: 50px;
     }
 
     .populaires {
@@ -607,6 +605,9 @@ footer p {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+
+
 }
 
 /* Small devices (phones, less than 768px) */
