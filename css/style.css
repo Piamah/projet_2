@@ -488,10 +488,12 @@ h2 {
 
 .activites {
     max-width: 100%;
-    width: 1340px;
-    height: 560px;
-    padding: 50px 0px 0px 30px;
+    width: 98%;
+    height: 100%;
+    padding: 50px 0px 20px 0px;
     gap: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .activites-cards {
@@ -500,7 +502,6 @@ h2 {
     flex-direction:row;
     flex-wrap: nowrap;
     max-width: 100%;
-    width:1280px;
     padding: 30px 0px 30px 0px;
     gap: 15px;
 
@@ -533,6 +534,7 @@ h2 {
 
 footer {
     max-width: 100%;
+    height: auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -677,10 +679,13 @@ header nav li:hover {
 
 /* SECTION MAIN */
 .main-container {
-    padding: 20px;
+    padding: 0px;
 }
 
 /* SECTION BARRE RECHERCHE */
+.recherche {
+    padding: 0px 0px 0px 20px;
+}
 
 .recherche button {
     display: none;
@@ -693,6 +698,7 @@ header nav li:hover {
 /* SECTION FILTRES */
 .filters-section {
     margin-bottom: 10px;
+    padding: 0px 0px 0px 20px;
 }
 
 .button-container {
@@ -730,29 +736,72 @@ button {
 }
 /* 500 LOGEMENTS */
 
-.info-icon-circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-    border: 1px solid #D9D9D9;
-    border-radius: 50%;
-
+.info-lgmt {
+    margin:0px;
+    padding: 0px 0px 0px 20px;
 }
-
-.info-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
 
 /* SECTIONS HEBERGEMENTS ET POPULAIRES */
-/* SECTION HEBERGEMENTS */
+
+.hebergements-and-populaires {
+    flex-direction: column-reverse;
+}
+
+.hebergements-and-populaires section {
+    border-radius: 0px;
+    padding: 20px !important;
+}
+
 /* SECTION POPULAIRES */
+.populaires {
+    margin: 30px 0px 0px 0px;
+}
+
+.populaires-cards {
+    flex-direction: column;
+}
+
+.populaires-cards a {
+    width: 100%;
+}
+
+/* SECTION HEBERGEMENTS */
+.hebergements {
+    background-color: white !important;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hebergements-main-title {
+    margin: 10px;
+}
+
+.hebergements-line-1,
+.hebergements-line-2 {
+    flex-direction: column;
+    gap:0px;
+}
+
+.hebergements .card {
+    margin: 10px;
+}
+
+.show-more {
+    margin: 10px;
+}
 /* SECTION ACTIVITES */
+.activites-cards {
+    flex-direction: ;
+}
+
 /* SECTION FOOTER*/
+footer {
+    flex-direction: column;
+    
+}
+
+footer div {
+    width: 100%;
+}
+
 }
