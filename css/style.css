@@ -80,7 +80,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    width: 61.09px;
+    width: 61px;
     height: 19px;
     padding: 30px 50px 30px 0px;
     gap: 10px;
@@ -96,6 +96,8 @@ header nav ul {
 
 }
 
+
+
 header nav li {
     display: flex;
     padding-top: 17px;
@@ -104,11 +106,7 @@ header nav li {
 
 header nav li:hover {
     border-top: 2px solid #0065FC;
-}
-
-header a:hover {
     color: #0065FC;
-
 }
 
 /* SECTION MAIN */
@@ -217,7 +215,6 @@ header a:hover {
 .filters-section {
     display: flex;
     align-items: center;
-    width: 100%;
     gap: 15px;
     margin-bottom: 30px;
 }
@@ -250,10 +247,7 @@ header a:hover {
     height: 50px;
     padding: 4px 19px 4px 19px;
     border-radius: 25px;
-    border: 2px;
-    gap: 10px;
     border: 2px solid #D9D9D9;
-    margin-right: 1px;
 
 }
 
@@ -267,6 +261,7 @@ header a:hover {
     flex-wrap: wrap;
     align-items: center;
 
+
 }
 
 .filters-section button:hover{
@@ -276,7 +271,6 @@ header a:hover {
 /* 500 LOGEMENTS */
 
 .info-lgmt {
-    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -660,6 +654,10 @@ header {
     padding-left:50px;
 }
 
+header nav {
+    width: 100%;
+}
+
 header nav ul {
     align-items: flex-end;
     gap:0px;
@@ -668,8 +666,12 @@ header nav ul {
 }
 
 header nav li {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 17px;
     border-bottom: 2px solid #F2F2F2;
-    padding: 0px 50px 20px 50px;
 }
 
 header nav li:hover {
@@ -684,12 +686,17 @@ header nav li:hover {
 
 /* SECTION BARRE RECHERCHE */
 .recherche {
-    padding: 0px 0px 0px 20px;
+    margin : 20px;
+}
+
+.recherche input {
+    width: 100%;
 }
 
 .recherche button {
     display: none;
 }
+
 
 #loupe {
     display: flex;
@@ -697,14 +704,14 @@ header nav li:hover {
 
 /* SECTION FILTRES */
 .filters-section {
-    margin-bottom: 10px;
-    padding: 0px 0px 0px 20px;
+    margin: 10px;
 }
 
 .button-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .button-group-1,
@@ -715,7 +722,7 @@ header nav li:hover {
     width: 100%;
     padding: 0px 0px 20px 0px;
     margin:0px;
-    white-space: nowrap;
+    justify-content: space-between;
 
 }
 
@@ -723,8 +730,8 @@ header nav li:hover {
 .family,
 .romantic,
 .fire {
-    margin: 5px 10px 0px 0px;
-    gap: 5px;
+    box-sizing: border-box;
+    width: 47%;
 }
 
 
@@ -733,13 +740,20 @@ button {
     flex-direction: row;
     align-items: center;
     width: 100%;
+
 }
+
 /* 500 LOGEMENTS */
 
 .info-lgmt {
-    margin:0px;
-    padding: 0px 0px 0px 20px;
+    margin:10px;
 }
+
+.info-icon-circle {
+    width: 33px;
+}
+
+
 
 /* SECTIONS HEBERGEMENTS ET POPULAIRES */
 
@@ -782,16 +796,26 @@ button {
     gap:0px;
 }
 
-.hebergements .card {
-    margin: 10px;
-}
 
 .show-more {
     margin: 10px;
 }
 /* SECTION ACTIVITES */
+
+.activites {
+    width: auto;
+    height: auto;
+    margin: 20px;
+    gap:0px;
+}
+
 .activites-cards {
-    flex-direction: ;
+    flex-direction: column;
+    height: auto;
+}
+
+.activites img {
+    width: 100%;
 }
 
 /* SECTION FOOTER*/
@@ -801,7 +825,7 @@ footer {
 }
 
 footer div {
-    width: 100%;
+    width: 97%;
 }
 
 }
