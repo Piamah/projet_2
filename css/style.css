@@ -703,9 +703,15 @@ header nav li:hover {
 }
 
 /* SECTION FILTRES */
-.filters-section {
-    margin: 10px;
+
+.filters-section i {
+    margin-right : 6px;
 }
+
+.filters-section {
+    margin : 10px;
+}
+
 
 .button-container {
     display: flex;
@@ -732,6 +738,7 @@ header nav li:hover {
 .fire {
     box-sizing: border-box;
     width: 47%;
+    font-size: 14px;
 }
 
 
@@ -749,9 +756,6 @@ button {
     margin:10px;
 }
 
-.info-icon-circle {
-    width: 33px;
-}
 
 
 
