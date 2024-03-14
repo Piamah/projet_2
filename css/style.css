@@ -73,7 +73,6 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .top-logo {
@@ -88,8 +87,6 @@ header {
 
 header nav ul {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     gap: 60px;
     margin: 0px 0px 20px 0px;
     padding: 0px 0px 20px 0px;
@@ -643,6 +640,7 @@ margin-bottom: 5px;
 @media (max-width: 767.98px) {
 /* SECTION HEADER */
 header {
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
