@@ -275,7 +275,7 @@ header nav li:hover {
     margin-bottom: 30px;
 }
 
-.info-icon-circle {
+.info-icon-circle i {
     display: flex;
     justify-content: center;
     align-items: center;
