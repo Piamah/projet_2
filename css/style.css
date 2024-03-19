@@ -298,7 +298,7 @@ header nav li:hover {
 }
 
 
-/* SECTIONS HEBERGEMENTS ET POPULAIRES */
+/* SECTIONS HEBERGEMENTS & POPULAIRES */
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -366,11 +366,8 @@ h2 {
 
 .hebergements-cards .card-content {
     padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 90px;
 }
-
 
 .hebergements .card-txt {
     display: flex;
@@ -383,18 +380,16 @@ h2 {
 
 .hebergements h3 {
     margin: 0px;
-    font-family: Raleway;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    word-wrap: break-word;
-
 }
 
 .hebergements-cards .card-subtitle {
     margin: 0%;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
     font-family: Raleway;
     font-size: 14px;
     font-weight: 400;
@@ -407,6 +402,7 @@ h2 {
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
 }
+
 
 .show-more {
     display: flex;
@@ -482,7 +478,6 @@ h2 {
 
 .activites-cards {
     display: flex;
-    justify-content: center;
     padding: 30px 0px 30px 0px;
     gap: 15px;
 
@@ -499,7 +494,7 @@ h2 {
     width: 297.5px;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
-    border:none;
+    border:none; 
     object-fit: cover;
 
 }
@@ -579,13 +574,7 @@ margin-bottom: 5px;
 .hebergements {
     width: 100%;
 }
-.hebergements-cards .card-title {
-    font-size: 14px;
-}
 
-.hebergements-cards .card-subtitle {
-    font-size: 13px;
-}
 /* SECTION POPULAIRE */
 .populaires {
     width: 100%;
